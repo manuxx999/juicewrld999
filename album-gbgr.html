@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Goodbye & Good Riddance - Juice WRLD</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f8f9fa;
+        }
+
+        header {
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .back-link {
+            display: inline-block;
+            background: #e94560;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 4px;
+            text-decoration: none;
+            margin-bottom: 20px;
+            transition: all 0.3s ease;
+        }
+
+        .back-link:hover {
+            background: #d63447;
+            transform: translateX(-3px);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .album-hero {
+            background: white;
+            padding: 40px;
+            border-radius: 8px;
+            margin: 40px 0;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            align-items: center;
+        }
+
+        .album-cover-large {
+            width: 100%;
+            height: 400px;
+            background: linear-gradient(135deg, #ff6b6b 0%, #ee5a6f 100%);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        .album-cover-large img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .album-info h2 {
+            font-size: 2em;
+            color: #1a1a2e;
+            margin-bottom: 10px;
+        }
+
+        .album-info p {
+            margin: 15px 0;
+            color: #666;
+            font-size: 1.05em;
+        }
+
+        .album-stats {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .stat {
+            background: #e94560;
+            color: white;
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .stat-label {
+            font-size: 0.9em;
+            opacity: 0.9;
+        }
+
+        .stat-value {
+            font-size: 1.5em;
+            font-weight: bold;
+            margin-top: 5px;
+        }
+
+        section {
+            background: white;
+            margin: 40px 0;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        section h2 {
+            font-size: 2em;
+            color: #1a1a2e;
+            margin-bottom: 25px;
+            border-bottom: 3px solid #e94560;
+            padding-bottom: 15px;
+            display: inline-block;
+        }
+
+        .tracklist {
+            margin-top: 30px;
+        }
+
+        .track {
+            display: flex;
+            padding: 15px;
+            border-bottom: 1px solid #eee;
+            align-items: center;
+            transition: all 0.3s ease;
+        }
+
+        .track:hover {
+            background: #f8f9fa;
+            padding-left: 25px;
+        }
+
+        .track-number {
+            font-weight: bold;
+            color: #e94560;
+            min-width: 40px;
+            font-size: 1.2em;
+        }
+
+        .track-info {
+            flex: 1;
+            margin-left: 20px;
+        }
+
+        .track-title {
+            font-size: 1.1em;
+            font-weight: 600;
+            color: #1a1a2e;
+        }
+
+        .track-artist {
+            font-size: 0.9em;
+            color: #999;
+            margin-top: 3px;
+        }
+
+        .track-duration {
+            color: #999;
+            font-size: 0.95em;
+        }
+
+        footer {
+            background: #1a1a2e;
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+            margin-top: 40px;
+        }
+
+        @media (max-width: 768px) {
+            .album-hero {
+                grid-template-columns: 1fr;
+            }
+
+            .album-cover-large {
+                height: 300px;
+            }
+
+            header h1 {
+                font-size: 1.8em;
+            }
+
+            .album-stats {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="index.html" class="back-link">← Torna alla Home</a>
+        <h1>Goodbye & Good Riddance</h1>
+        <p>L'Album che ha lanciato una leggenda</p>
+    </header>
+
+    <div class="container">
+        <div class="album-hero">
+            <div class="album-cover-large">
+                <img src="GBGR.jfif" alt="Goodbye & Good Riddance">
+            </div>
+            <div class="album-info">
+                <h2>Goodbye & Good Riddance</h2>
+                <p><strong>Artista:</strong> Juice WRLD</p>
+                <p><strong>Data di Rilascio:</strong> 29 Giugno 2018</p>
+                <p><strong>Etichetta:</strong> Interscope Records, Grade A Productions</p>
+                <p><strong>Genere:</strong> Hip Hop, Trap, Emo Rap</p>
+                <p><strong>Descrizione:</strong> Debut album rivoluzionario di Juice WRLD che lo ha lanciato verso il successo globale. Con il mega-hit "Lucid Dreams", questo album combina melodie accattivanti con testi introspettivi su amore, ansia e depressione.</p>
+
+                <div class="album-stats">
+                    <div class="stat">
+                        <div class="stat-label">Picco Billboard 200</div>
+                        <div class="stat-value">#6</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-label">Tracce</div>
+                        <div class="stat-value">12</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-label">Streams</div>
+                        <div class="stat-value">3B+</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-label">Certificazione</div>
+                        <div class="stat-value">3x Platino</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section>
+            <h2>Tracklist Completa</h2>
+            <div class="tracklist">
+                <div class="track">
+                    <div class="track-number">1.</div>
+                    <div class="track-info">
+                        <div class="track-title">Intro</div>
+                    </div>
+                    <div class="track-duration">1:26</div>
+                </div>
+                <div class="track">
+                    <div class="track-number">2.</div>
+                    <div class="track-info">
+                        <div class="track-title">All Girls Are The Same</div>
+                    </div>
+                    <div class="track-duration">3:08</div>
+                </div>
+                <div class="track">
+                    <div class="track-number">3.</div>
+                    <div class="track-info">
+                        <div class="track-title">Lucid Dreams</div>
+                    </div>
+                    <div class="track-duration">3:00</div>
+                </div>
+                <div class="track">
+                    <div class="track-number">4.</div>
+                    <div class="track-info">
+                        <div class="track-title">Corridor</div>
+                    </div>
+                    <div class="track-duration">2:46</div>
+                </div>
+                <div class="track">
+                    <div class="track-number">5.</div>
+                    <div class="track-info">
+                        <div class="track-title">Long Gone</div>
+                    </div>
+                    <div class="track-duration">3:26</div>
+                </div>
+                <div class="track">
+                    <div class="track-number">6.</div>
+                    <div class="track-info">
+                        <div class="track-title">Lean Wit Me</div>
+                    </div>
+                    <div class="track-duration">2:46</div>
+                </div>
+                <div class="track">
+                    <div class="track-number">7.</div>
+                    <div class="track-info">
+                        <div class="track-title">Gnat</div>
+                    </div>
+                    <div class="track-duration">2:53</div>
+                </div>
+                <div class="track">
+                    <div class="track-number">8.</div>
+                    <div class="track-info">
+                        <div class="track-title">I'm Still</div>
+                    </div>
+                    <div class="track-duration">3:56</div>
+                </div>
+                <div class="track">
+                    <div class="track-number">9.</div>
+                    <div class="track-info">
+                        <div class="track-title">Make It Back</div>
+                    </div>
+                    <div class="track-duration">3:31</div>
+                </div>
+                <div class="track">
+                    <div class="track-number">10.</div>
+                    <div class="track-info">
+                        <div class="track-title">Robbery</div>
+                    </div>
+                    <div class="track-duration">3:14</div>
+                </div>
+                <div class="track">
+                    <div class="track-number">11.</div>
+                    <div class="track-info">
+                        <div class="track-title">One Wish</div>
+                    </div>
+                    <div class="track-duration">2:23</div>
+                </div>
+                <div class="track">
+                    <div class="track-number">12.</div>
+                    <div class="track-info">
+                        <div class="track-title">Feeling</div>
+                    </div>
+                    <div class="track-duration">3:06</div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Informazioni Dettagliate</h2>
+            <p><strong>Background e Contesto:</strong> "Goodbye & Good Riddance" è stato pubblicato il 29 giugno 2018, quando Juice WRLD aveva solo 19 anni. L'album è stato un successo immediato, debuttando al numero 6 della Billboard 200 e raggiungendo la certificazione di 3x Platino.</p>
+
+            <p><strong>Hit Singoli:</strong> Il brano "Lucid Dreams" è diventato un fenomeno virale, specialmente su TikTok. La canzone parla di relazioni tossiche e ha accumulato miliardi di visualizzazioni su piattaforme streaming mondiali. Altre canzoni degne di nota includono "All Girls Are the Same" e "Robbery".</p>
+
+            <p><strong>Stile e Tema:</strong> L'album affronta tematiche di amore, tradimento, depressione e ansia con melodie emo-rap accattivanti. Juice WRLD combina elementi di trap, emo rock e melodie vocali distintive che lo hanno reso unico nel panorama musicale.</p>
+
+            <p><strong>Impatto Culturale:</strong> Questo album ha definito la generazione Gen Z e ha influenzato innumerevoli artisti emergenti. È stato accreditato nel riportare in auge lo stile emo-rap e nell'avvicinare il genere al mainstream.</p>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Juice WRLD Tribute. Goodbye & Good Riddance - 2018</p>
+        <p>"Legends Never Die"</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Party Never Ends - Juice WRLD</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f8f9fa;
+        }
+
+        header {
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .back-link {
+            display: inline-block;
+            background: #e94560;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 4px;
+            text-decoration: none;
+            margin-bottom: 20px;
+            transition: all 0.3s ease;
+        }
+
+        .back-link:hover {
+            background: #d63447;
+            transform: translateX(-3px);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .album-hero {
+            background: white;
+            padding: 40px;
+            border-radius: 8px;
+            margin: 40px 0;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            align-items: center;
+        }
+
+        .album-cover-large {
+            width: 100%;
+            height: 400px;
+            background: linear-gradient(135deg, #30cfd0 0%, #330867 100%);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        .album-cover-large img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .album-info h2 {
+            font-size: 2em;
+            color: #1a1a2e;
+            margin-bottom: 10px;
+        }
+
+        .album-info p {
+            margin: 15px 0;
+            color: #666;
+            font-size: 1.05em;
+        }
+
+        .album-stats {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .stat {
+            background: #e94560;
+            color: white;
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .stat-label {
+            font-size: 0.9em;
+            opacity: 0.9;
+        }
+
+        .stat-value {
+            font-size: 1.5em;
+            font-weight: bold;
+            margin-top: 5px;
+        }
+
+        section {
+            background: white;
+            margin: 40px 0;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        section h2 {
+            font-size: 2em;
+            color: #1a1a2e;
+            margin-bottom: 25px;
+            border-bottom: 3px solid #e94560;
+            padding-bottom: 15px;
+            display: inline-block;
+        }
+
+        .tracklist {
+            margin-top: 30px;
+        }
+
+        .track {
+            display: flex;
+            padding: 15px;
+            border-bottom: 1px solid #eee;
+            align-items: center;
+            transition: all 0.3s ease;
+        }
+
+        .track:hover {
+            background: #f8f9fa;
+            padding-left: 25px;
+        }
+
+        .track-number {
+            font-weight: bold;
+            color: #e94560;
+            min-width: 40px;
+            font-size: 1.2em;
+        }
+
+        .track-info {
+            flex: 1;
+            margin-left: 20px;
+        }
+
+        .track-title {
+            font-size: 1.1em;
+            font-weight: 600;
+            color: #1a1a2e;
+        }
+
+        .track-artist {
+            font-size: 0.9em;
+            color: #999;
+            margin-top: 3px;
+        }
+
+        .track-duration {
+            color: #999;
+            font-size: 0.95em;
+        }
+
+        footer {
+            background: #1a1a2e;
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+            margin-top: 40px;
+        }
+
+        @media (max-width: 768px) {
+            .album-hero {
+                grid-template-columns: 1fr;
+            }
+
+            .album-cover-large {
+                height: 300px;
+            }
+
+            header h1 {
+                font-size: 1.8em;
+            }
+
+            .album-stats {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="index.html" class="back-link">← Torna alla Home</a>
+        <h1>The Party Never Ends</h1>
+        <p>Album Compilato - Progetti Collaborativi Speciali</p>
+    </header>
+
+    <div class="container">
+        <div class="album-hero">
+            <div class="album-cover-large">
+                <img src="TPNE.jfif" alt="The Party Never Ends">
+            </div>
+            <div class="album-info">
+                <h2>The Party Never Ends</h2>
+                <p><strong>Artista:</strong> Juice WRLD</p>
+                <p><strong>Data di Rilascio:</strong> 5 Agosto 2022</p>
+                <p><strong>Etichetta:</strong> Interscope Records, Grade A Productions</p>
+                <p><strong>Genere:</strong> Hip Hop, Trap, Emo Rap, Pop</p>
+                <p><strong>Descrizione:</strong> Raccolta speciale e ulteriore di progetti collaborativi e tracce esclusive che celebrano lo spirito creativo di Juice WRLD. L'album sottolinea la versatilità dell'artista e la sua capacità di brillare sia da solista che in collaborazione con altri artisti di livello mondiale.</p>
+
+                <div class="album-stats">
+                    <div class="stat">
+                        <div class="stat-label">Picco Billboard 200</div>
+                        <div class="stat-value">#2</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-label">Tracce</div>
+                        <div class="stat-value">18</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-label">Streams</div>
+                        <div class="stat-value">1.8B+</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-label">Certificazione</div>
+                        <div class="stat-value">Oro</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section>
+            <h2>Tracklist Completa</h2>
+            <div class="tracklist">
+                <div class="track">
+                    <div class="track-number">1.</div>
+                    <div class="track-info">
+                        <div class="track-title">Love All</div>
+                        <div class="track-artist">ft. Trippie Redd</div>
+                    </div>
+                    <div class="track-duration">3:26</div>
+                </div>
+                <div class="track">
+                    <div class="track-number">2.</div>
+                    <div class="track-info">
+                        <div class="track-title">Unrequited Love</div>
+                    </div>
+                    <div class="track-duration">3:44</div>
+                </div>
+                <div class="track">
+                    <div class="track-number">3.</div>
+                    <div class="track-info">
+                        <div class="track-title">Slow It Down</div>
+                    </div>
+                    <div class="track-duration">3:15</div>
+                </div>
+                <div class="track">
+                    <div class="track-number">4.</div>
+                    <div class="track-info">
+                        <div class="track-title">In My Head</div>
+                    </div>
+                    <div class="track-duration">3:32</div>
+                </div>
+                <div class="track">
+                    <div class="track-number">5.</div>
+                    <div class="track-info">
+                        <div class="track-title">No Face</div>
+                        <div class="track-artist">ft. Psycho</div>
+                    </div>
+                    <div class="track-duration">3:18</div>
+                </div>
+                <div class="track">
+                    <div class="track-number">6.</div>
+                    <div class="track-info">
+                        <div class="track-title">Overtime</div>
+                    </div>
+                    <div class="track-duration">3:27</div>
+                </div>
+                <div class="track">
+                    <div class="track-number">7.</div>
+                    <div class="track-info">
+                        <div class="track-title">Again</div>
+                    </div>
+                    <div class="track-duration">3:21</div>
+                </div>
+                <div class="track">
+                    <div class="track-number">8.</div>
+                    <div class="track-info">
+                        <div class="track-title">Better Days</div>
+                        <div class="track-artist">ft. Clever</div>
+                    </div>
+                    <div class="track-duration">3:38</div>
+                </div>
+                <div class="track">
+                    <div class="track-number">9.</div>
+                    <div class="track-info">
+                        <div class="track-title">Realer Than Ever</div>
+                    </div>
+                    <div class="track-duration">2:54</div>
+                </div>
+                <div class="track">
+                    <div class="track-number">10.</div>
+                    <div class="track-info">
+                        <div class="track-title">Beautiful</div>
+                    </div>
+                    <div class="track-duration">3:47</div>
+                </div>
+                <div class="track">
+                    <div class="track-number">11.</div>
+                    <div class="track-info">
+                        <div class="track-title">Forever New</div>
+                    </div>
+                    <div class="track-duration">3:23</div>
+                </div>
+                <div class="track">
+                    <div class="track-number">12.</div>
+                    <div class="track-info">
+                        <div class="track-title">Keep Moving</div>
+                    </div>
+                    <div class="track-duration">3:09</div>
+                </div>
+                <div class="track">
+                    <div class="track-number">13.</div>
+                    <div class="track-info">
+                        <div class="track-title">Lost It</div>
+                        <div class="track-artist">ft. Young Thug</div>
+                    </div>
+                    <div class="track-duration">3:31</div>
+                </div>
+                <div class="track">
+                    <div class="track-number">14.</div>
+                    <div class="track-info">
+                        <div class="track-title">Sunshine</div>
+                    </div>
+                    <div class="track-duration">3:26</div>
+                </div>
+                <div class="track">
+                    <div class="track-number">15.</div>
+                    <div class="track-info">
+                        <div class="track-title">Real One</div>
+                    </div>
+                    <div class="track-duration">3:14</div>
+                </div>
+                <div class="track">
+                    <div class="track-number">16.</div>
+                    <div class="track-info">
+                        <div class="track-title">Final Day</div>
+                    </div>
+                    <div class="track-duration">2:52</div>
+                </div>
+                <div class="track">
+                    <div class="track-number">17.</div>
+                    <div class="track-info">
+                        <div class="track-title">In the End</div>
+                        <div class="track-artist">ft. Eminem</div>
+                    </div>
+                    <div class="track-duration">3:45</div>
+                </div>
+                <div class="track">
+                    <div class="track-number">18.</div>
+                    <div class="track-info">
+                        <div class="track-title">Eternal</div>
+                    </div>
+                    <div class="track-duration">3:58</div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Informazioni Dettagliate</h2>
+            <p><strong>Celebrazione Collaborativa:</strong> "The Party Never Ends" è stato rilasciato il 5 agosto 2022, rappresentando una raccolta di progetti collaborativi e tracce speciali. L'album debutta al numero 2 della Billboard 200 e cattura la versatilità di Juice WRLD nel lavorare con diversi artisti.</p>
+
+            <p><strong>Versatilità Artistica:</strong> Come suggerisce il titolo, "The Party Never Ends" celebra lo spirito creativo e la gioia artistica di Juice WRLD. L'album include collaborazioni con artisti di spicco che mettono in luce diverse sfaccettature del suo talento.</p>
+
+            <p><strong>Produzioni Variegate:</strong> Le tracce mostrano una varietà di stili, da beat trap pesanti a melodie pop sofisticate. Ogni brano è stato curato per garantire qualità e originalità, rispettando la visione artistica di Juice WRLD.</p>
+
+            <p><strong>Un Lascito Celebratorio:</strong> "The Party Never Ends" rimane una celebrazione della vita, della musica e dello spirito indomito di Juice WRLD. È un ricordo che sebbene sia fisicamente scomparso, il suo lascito e la sua musica continueranno per sempre a far festa con i fan di tutto il mondo.</p>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Juice WRLD Tribute. The Party Never Ends - 2022</p>
+        <p>"Legends Never Die"</p>
+    </footer>
+</body>
+</html>

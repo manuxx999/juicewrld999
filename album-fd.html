@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fighting Demons - Juice WRLD</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f8f9fa;
+        }
+
+        header {
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .back-link {
+            display: inline-block;
+            background: #e94560;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 4px;
+            text-decoration: none;
+            margin-bottom: 20px;
+            transition: all 0.3s ease;
+        }
+
+        .back-link:hover {
+            background: #d63447;
+            transform: translateX(-3px);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .album-hero {
+            background: white;
+            padding: 40px;
+            border-radius: 8px;
+            margin: 40px 0;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            align-items: center;
+        }
+
+        .album-cover-large {
+            width: 100%;
+            height: 400px;
+            background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        .album-cover-large img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .album-info h2 {
+            font-size: 2em;
+            color: #1a1a2e;
+            margin-bottom: 10px;
+        }
+
+        .album-info p {
+            margin: 15px 0;
+            color: #666;
+            font-size: 1.05em;
+        }
+
+        .album-stats {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .stat {
+            background: #e94560;
+            color: white;
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .stat-label {
+            font-size: 0.9em;
+            opacity: 0.9;
+        }
+
+        .stat-value {
+            font-size: 1.5em;
+            font-weight: bold;
+            margin-top: 5px;
+        }
+
+        section {
+            background: white;
+            margin: 40px 0;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        section h2 {
+            font-size: 2em;
+            color: #1a1a2e;
+            margin-bottom: 25px;
+            border-bottom: 3px solid #e94560;
+            padding-bottom: 15px;
+            display: inline-block;
+        }
+
+        .tracklist {
+            margin-top: 30px;
+        }
+
+        .track {
+            display: flex;
+            padding: 15px;
+            border-bottom: 1px solid #eee;
+            align-items: center;
+            transition: all 0.3s ease;
+        }
+
+        .track:hover {
+            background: #f8f9fa;
+            padding-left: 25px;
+        }
+
+        .track-number {
+            font-weight: bold;
+            color: #e94560;
+            min-width: 40px;
+            font-size: 1.2em;
+        }
+
+        .track-info {
+            flex: 1;
+            margin-left: 20px;
+        }
+
+        .track-title {
+            font-size: 1.1em;
+            font-weight: 600;
+            color: #1a1a2e;
+        }
+
+        .track-artist {
+            font-size: 0.9em;
+            color: #999;
+            margin-top: 3px;
+        }
+
+        .track-duration {
+            color: #999;
+            font-size: 0.95em;
+        }
+
+        footer {
+            background: #1a1a2e;
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+            margin-top: 40px;
+        }
+
+        @media (max-width: 768px) {
+            .album-hero {
+                grid-template-columns: 1fr;
+            }
+
+            .album-cover-large {
+                height: 300px;
+            }
+
+            header h1 {
+                font-size: 1.8em;
+            }
+
+            .album-stats {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="index.html" class="back-link">← Torna alla Home</a>
+        <h1>Fighting Demons</h1>
+        <p>Album Posthumo - La Battaglia Continua</p>
+    </header>
+
+    <div class="container">
+        <div class="album-hero">
+            <div class="album-cover-large">
+                <img src="FD.jfif" alt="Fighting Demons">
+            </div>
+            <div class="album-info">
+                <h2>Fighting Demons</h2>
+                <p><strong>Artista:</strong> Juice WRLD</p>
+                <p><strong>Data di Rilascio:</strong> 10 Dicembre 2021</p>
+                <p><strong>Etichetta:</strong> Interscope Records, Grade A Productions</p>
+                <p><strong>Genere:</strong> Hip Hop, Trap, Emo Rap</p>
+                <p><strong>Descrizione:</strong> Secondo album posthumo compilato con tracce inedite e demo archiviate. "Fighting Demons" continua l'eredità di Juice WRLD affrontando direttamente i temi di lotta personale, ansia e il viaggio verso la redenzione. Brani come "Go Hard" mostrano ancora tutta la sua potenza lirica.</p>
+
+                <div class="album-stats">
+                    <div class="stat">
+                        <div class="stat-label">Picco Billboard 200</div>
+                        <div class="stat-value">#3</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-label">Tracce</div>
+                        <div class="stat-value">16</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-label">Streams</div>
+                        <div class="stat-value">2B+</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-label">Certificazione</div>
+                        <div class="stat-value">Platino</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section>
+            <h2>Tracklist Completa</h2>
+            <div class="tracklist">
+                <div class="track">
+                    <div class="track-number">1.</div>
+                    <div class="track-info">
+                        <div class="track-title">Already Dead</div>
+                    </div>
+                    <div class="track-duration">2:56</div>
+                </div>
+                <div class="track">
+                    <div class="track-number">2.</div>
+                    <div class="track-info">
+                        <div class="track-title">Go Hard</div>
+                    </div>
+                    <div class="track-duration">3:18</div>
+                </div>
+                <div class="track">
+                    <div class="track-number">3.</div>
+                    <div class="track-info">
+                        <div class="track-title">Sometimes</div>
+                    </div>
+                    <div class="track-duration">3:34</div>
+                </div>
+                <div class="track">
+                    <div class="track-number">4.</div>
+                    <div class="track-info">
+                        <div class="track-title">Can Say</div>
+                    </div>
+                    <div class="track-duration">3:22</div>
+                </div>
+                <div class="track">
+                    <div class="track-number">5.</div>
+                    <div class="track-info">
+                        <div class="track-title">The Bends</div>
+                    </div>
+                    <div class="track-duration">3:27</div>
+                </div>
+                <div class="track">
+                    <div class="track-number">6.</div>
+                    <div class="track-info">
+                        <div class="track-title">Drainedout</div>
+                    </div>
+                    <div class="track-duration">3:01</div>
+                </div>
+                <div class="track">
+                    <div class="track-number">7.</div>
+                    <div class="track-info">
+                        <div class="track-title">Hurt Me</div>
+                    </div>
+                    <div class="track-duration">2:47</div>
+                </div>
+                <div class="track">
+                    <div class="track-number">8.</div>
+                    <div class="track-info">
+                        <div class="track-title">Up Up and Away</div>
+                    </div>
+                    <div class="track-duration">3:43</div>
+                </div>
+                <div class="track">
+                    <div class="track-number">9.</div>
+                    <div class="track-info">
+                        <div class="track-title">Tell Me U Luv Me</div>
+                    </div>
+                    <div class="track-duration">2:58</div>
+                </div>
+                <div class="track">
+                    <div class="track-number">10.</div>
+                    <div class="track-info">
+                        <div class="track-title">Graduation</div>
+                    </div>
+                    <div class="track-duration">3:15</div>
+                </div>
+                <div class="track">
+                    <div class="track-number">11.</div>
+                    <div class="track-info">
+                        <div class="track-title">Rental</div>
+                    </div>
+                    <div class="track-duration">2:51</div>
+                </div>
+                <div class="track">
+                    <div class="track-number">12.</div>
+                    <div class="track-info">
+                        <div class="track-title">Rockstar Conspiracy</div>
+                    </div>
+                    <div class="track-duration">3:11</div>
+                </div>
+                <div class="track">
+                    <div class="track-number">13.</div>
+                    <div class="track-info">
+                        <div class="track-title">Three Sixty Five</div>
+                    </div>
+                    <div class="track-duration">3:09</div>
+                </div>
+                <div class="track">
+                    <div class="track-number">14.</div>
+                    <div class="track-info">
+                        <div class="track-title">Let It Out</div>
+                    </div>
+                    <div class="track-duration">3:43</div>
+                </div>
+                <div class="track">
+                    <div class="track-number">15.</div>
+                    <div class="track-info">
+                        <div class="track-title">Starstruck</div>
+                    </div>
+                    <div class="track-duration">3:22</div>
+                </div>
+                <div class="track">
+                    <div class="track-number">16.</div>
+                    <div class="track-info">
+                        <div class="track-title">Quitter</div>
+                    </div>
+                    <div class="track-duration">3:36</div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Informazioni Dettagliate</h2>
+            <p><strong>Battaglia Personale:</strong> "Fighting Demons" è stato rilasciato il 10 dicembre 2021, come secondo album posthumo. L'album è un'esplorazione diretta e cruda della lotta di Juice WRLD con la depressione, l'ansia e la ricerca di redenzione.</p>
+
+            <p><strong>Potenza Lirica:</strong> Con canzoni come "Go Hard", l'album mostra ancora tutta la potenza e la vulnerabilità lirica di Juice WRLD. I testi affrontano il dolore, il trauma e la disposizione a continuare a combattere nonostante le difficoltà.</p>
+
+            <p><strong>Produzione Qualitativa:</strong> Nonostante sia compilato da tracce inedite, l'album mantiene un livello di produzione e arrangiamento eccezionali, dimostrando l'attenzione della sua etichetta nel preservare la sua visione artistica.</p>
+
+            <p><strong>Eredità di Speranza:</strong> "Fighting Demons" continua a portare il messaggio di Juice WRLD che è importante affrontare i propri demoni interiori e cercare aiuto. L'album rimane una testimonianza della sua forza e del suo coraggio nel parlare apertamente di salute mentale.</p>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Juice WRLD Tribute. Fighting Demons - 2021</p>
+        <p>"Legends Never Die"</p>
+    </footer>
+</body>
+</html>

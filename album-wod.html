@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World on Drugs - Juice WRLD x Future</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f8f9fa;
+        }
+
+        header {
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .back-link {
+            display: inline-block;
+            background: #e94560;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 4px;
+            text-decoration: none;
+            margin-bottom: 20px;
+            transition: all 0.3s ease;
+        }
+
+        .back-link:hover {
+            background: #d63447;
+            transform: translateX(-3px);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .album-hero {
+            background: white;
+            padding: 40px;
+            border-radius: 8px;
+            margin: 40px 0;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            align-items: center;
+        }
+
+        .album-cover-large {
+            width: 100%;
+            height: 400px;
+            background: linear-gradient(135deg, #4ecdc4 0%, #44a08d 100%);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        .album-cover-large img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .album-info h2 {
+            font-size: 2em;
+            color: #1a1a2e;
+            margin-bottom: 10px;
+        }
+
+        .album-info p {
+            margin: 15px 0;
+            color: #666;
+            font-size: 1.05em;
+        }
+
+        .album-stats {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .stat {
+            background: #e94560;
+            color: white;
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .stat-label {
+            font-size: 0.9em;
+            opacity: 0.9;
+        }
+
+        .stat-value {
+            font-size: 1.5em;
+            font-weight: bold;
+            margin-top: 5px;
+        }
+
+        section {
+            background: white;
+            margin: 40px 0;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        section h2 {
+            font-size: 2em;
+            color: #1a1a2e;
+            margin-bottom: 25px;
+            border-bottom: 3px solid #e94560;
+            padding-bottom: 15px;
+            display: inline-block;
+        }
+
+        .tracklist {
+            margin-top: 30px;
+        }
+
+        .track {
+            display: flex;
+            padding: 15px;
+            border-bottom: 1px solid #eee;
+            align-items: center;
+            transition: all 0.3s ease;
+        }
+
+        .track:hover {
+            background: #f8f9fa;
+            padding-left: 25px;
+        }
+
+        .track-number {
+            font-weight: bold;
+            color: #e94560;
+            min-width: 40px;
+            font-size: 1.2em;
+        }
+
+        .track-info {
+            flex: 1;
+            margin-left: 20px;
+        }
+
+        .track-title {
+            font-size: 1.1em;
+            font-weight: 600;
+            color: #1a1a2e;
+        }
+
+        .track-artist {
+            font-size: 0.9em;
+            color: #999;
+            margin-top: 3px;
+        }
+
+        .track-duration {
+            color: #999;
+            font-size: 0.95em;
+        }
+
+        footer {
+            background: #1a1a2e;
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+            margin-top: 40px;
+        }
+
+        @media (max-width: 768px) {
+            .album-hero {
+                grid-template-columns: 1fr;
+            }
+
+            .album-cover-large {
+                height: 300px;
+            }
+
+            header h1 {
+                font-size: 1.8em;
+            }
+
+            .album-stats {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="index.html" class="back-link">← Torna alla Home</a>
+        <h1>World on Drugs</h1>
+        <p>Juice WRLD x Future</p>
+    </header>
+
+    <div class="container">
+        <div class="album-hero">
+            <div class="album-cover-large">
+                <img src="WOD.jfif" alt="World on Drugs">
+            </div>
+            <div class="album-info">
+                <h2>World on Drugs</h2>
+                <p><strong>Artisti:</strong> Juice WRLD x Future</p>
+                <p><strong>Data di Rilascio:</strong> 28 Settembre 2018</p>
+                <p><strong>Etichetta:</strong> Interscope Records, Grade A Productions</p>
+                <p><strong>Genere:</strong> Hip Hop, Trap</p>
+                <p><strong>Descrizione:</strong> Progetto collaborativo tra Juice WRLD e il leggendario Future. Questo EP mostra come Juice WRLD riesce a mantenere la sua identità artistica mentre collabora con uno dei rapper più influenti della generazione. Un mix perfetto di trap beats e melodie emotive.</p>
+
+                <div class="album-stats">
+                    <div class="stat">
+                        <div class="stat-label">Picco Billboard 200</div>
+                        <div class="stat-value">#24</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-label">Tracce</div>
+                        <div class="stat-value">8</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-label">Streams</div>
+                        <div class="stat-value">1B+</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-label">Certificazione</div>
+                        <div class="stat-value">Oro</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section>
+            <h2>Tracklist Completa</h2>
+            <div class="tracklist">
+                <div class="track">
+                    <div class="track-number">1.</div>
+                    <div class="track-info">
+                        <div class="track-title">Jet Lag</div>
+                        <div class="track-artist">Juice WRLD x Future</div>
+                    </div>
+                    <div class="track-duration">3:45</div>
+                </div>
+                <div class="track">
+                    <div class="track-number">2.</div>
+                    <div class="track-info">
+                        <div class="track-title">Codeine Crazy</div>
+                        <div class="track-artist">Juice WRLD x Future</div>
+                    </div>
+                    <div class="track-duration">3:18</div>
+                </div>
+                <div class="track">
+                    <div class="track-number">3.</div>
+                    <div class="track-info">
+                        <div class="track-title">Rich Flex</div>
+                        <div class="track-artist">Juice WRLD x Future</div>
+                    </div>
+                    <div class="track-duration">2:54</div>
+                </div>
+                <div class="track">
+                    <div class="track-number">4.</div>
+                    <div class="track-info">
+                        <div class="track-title">She Loves Me</div>
+                        <div class="track-artist">Juice WRLD x Future</div>
+                    </div>
+                    <div class="track-duration">3:26</div>
+                </div>
+                <div class="track">
+                    <div class="track-number">5.</div>
+                    <div class="track-info">
+                        <div class="track-title">Ring Ring</div>
+                        <div class="track-artist">Juice WRLD x Future</div>
+                    </div>
+                    <div class="track-duration">3:12</div>
+                </div>
+                <div class="track">
+                    <div class="track-number">6.</div>
+                    <div class="track-info">
+                        <div class="track-title">Hard Work Pays Off</div>
+                        <div class="track-artist">Juice WRLD x Future</div>
+                    </div>
+                    <div class="track-duration">3:08</div>
+                </div>
+                <div class="track">
+                    <div class="track-number">7.</div>
+                    <div class="track-info">
+                        <div class="track-title">Fine China</div>
+                        <div class="track-artist">Juice WRLD x Future</div>
+                    </div>
+                    <div class="track-duration">3:35</div>
+                </div>
+                <div class="track">
+                    <div class="track-number">8.</div>
+                    <div class="track-info">
+                        <div class="track-title">Blood on My Jeans</div>
+                        <div class="track-artist">Juice WRLD x Future</div>
+                    </div>
+                    <div class="track-duration">3:42</div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Informazioni Dettagliate</h2>
+            <p><strong>La Collaborazione:</strong> "World on Drugs" è stato rilasciato il 28 settembre 2018 come progetto collaborativo tra Juice WRLD e Future. È arrivato al numero 24 della Billboard 200 e ha ottenuto la certificazione di Oro.</p>
+
+            <p><strong>Produzione e Sound:</strong> L'EP combina il stile trap futuristico di Future con le melodie emotive e i testi introspettivi di Juice WRLD. I beat heavy e il flow dell'artista più anziano si mescolano perfettamente con le capacità melodiche di Juice WRLD.</p>
+
+            <p><strong>Temi Ricorrenti:</strong> L'album affronta tematiche di lusso, amore tossico e la vita nel mondo dei sogni indotti da droghe. I testi sono spesso malinconici nonostante il sound hip-hop commerciale.</p>
+
+            <p><strong>Impatto:</strong> Sebbene non sia stato il progetto più grande di entrambi gli artisti, ha dimostrato che Juice WRLD poteva mantenere la sua voce artistica anche in collaborazioni con artisti più affermati, solidificando la sua posizione nel panorama hip-hop.</p>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Juice WRLD Tribute. World on Drugs - 2018</p>
+        <p>"Legends Never Die"</p>
+    </footer>
+</body>
+</html>
