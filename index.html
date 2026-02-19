@@ -293,6 +293,67 @@
             box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
         }
 
+        .index-section {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 50px 40px;
+            border-radius: 0 !important;
+            margin: -20px -20px 40px -20px !important;
+            box-shadow: none !important;
+        }
+
+        .index-section h2 {
+            color: white;
+            border-bottom-color: white;
+            margin-bottom: 35px;
+        }
+
+        .index-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+        }
+
+        .index-card {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 30px;
+            border-radius: 12px;
+            text-decoration: none;
+            color: white;
+            border: 2px solid rgba(255, 255, 255, 0.2);
+            transition: all 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            cursor: pointer;
+            backdrop-filter: blur(10px);
+        }
+
+        .index-card:hover {
+            background: rgba(255, 255, 255, 0.2);
+            border-color: rgba(255, 255, 255, 0.5);
+            transform: translateY(-8px);
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+        }
+
+        .index-icon {
+            font-size: 3.5em;
+            margin-bottom: 15px;
+        }
+
+        .index-card h3 {
+            font-size: 1.4em;
+            margin-bottom: 12px;
+            font-weight: 600;
+        }
+
+        .index-card p {
+            font-size: 0.95em;
+            opacity: 0.95;
+            line-height: 1.5;
+        }
+
         footer {
             background: #1a1a2e;
             color: white;
@@ -366,6 +427,43 @@
     </nav>
 
     <div class="container">
+        <!-- SEZIONE INDICE -->
+        <section class="index-section">
+            <h2>Scopri il Sito</h2>
+            <div class="index-grid">
+                <a href="#biography" class="index-card">
+                    <div class="index-icon">👤</div>
+                    <h3>Chi Era Juice WRLD</h3>
+                    <p>La storia di Jarad Anthony Higgins e come è nato un artista leggendario</p>
+                </a>
+                <a href="#career" class="index-card">
+                    <div class="index-icon">🎵</div>
+                    <h3>La Sua Carriera</h3>
+                    <p>Timeline dei momenti più importanti della sua trajectory artistica</p>
+                </a>
+                <a href="#albums" class="index-card">
+                    <div class="index-icon">💿</div>
+                    <h3>Discografia</h3>
+                    <p>Scopri i suoi album principali e il loro impatto nel panorama musicale</p>
+                </a>
+                <a href="#achievements" class="index-card">
+                    <div class="index-icon">🏆</div>
+                    <h3>Riconoscimenti</h3>
+                    <p>Successi, certificazioni e premi conquistati durante la sua carriera</p>
+                </a>
+                <a href="#impact" class="index-card">
+                    <div class="index-icon">⭐</div>
+                    <h3>La Sua Eredità</h3>
+                    <p>L'impatto duraturo e l'influenza culturale di Juice WRLD nel mondo</p>
+                </a>
+                <a href="#gallery" class="index-card">
+                    <div class="index-icon">🎬</div>
+                    <h3>Galleria</h3>
+                    <p>Momenti memorabili e immagini iconiche della sua vita artistica</p>
+                </a>
+            </div>
+        </section>
+
         <!-- SEZIONE BIOGRAFIA -->
         <section id="biography">
             <h2>Chi Era Juice WRLD</h2>
