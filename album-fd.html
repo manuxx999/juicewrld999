@@ -190,6 +190,61 @@
             margin-top: 40px;
         }
 
+        .footer-margin {
+            margin-top: 0;
+        }
+
+        .album-navigation {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 30px 20px;
+            margin: 40px 0 0 0;
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .nav-prev,
+        .nav-next,
+        .nav-home {
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            padding: 12px 24px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            display: inline-block;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+        }
+
+        .nav-prev:hover,
+        .nav-next:hover {
+            background: rgba(255, 255, 255, 0.3);
+            border-color: rgba(255, 255, 255, 0.6);
+            transform: translateY(-2px);
+        }
+
+        .nav-home {
+            flex: 0 1 auto;
+            font-size: 1.1em;
+        }
+
+        .nav-home:hover {
+            background: rgba(255, 255, 255, 0.4);
+            border-color: white;
+            transform: scale(1.05);
+        }
+
+        .nav-empty {
+            flex: 1;
+        }
+
         @media (max-width: 768px) {
             .album-hero {
                 grid-template-columns: 1fr;
@@ -380,7 +435,15 @@
         </section>
     </div>
 
-    <footer>
+    <div class="album-navigation">
+        <div class="nav-container">
+            <a href="album-lnd.html" class="nav-prev">← Precedente Album</a>
+            <a href="index.html" class="nav-home">🏠 Torna alla Home</a>
+            <a href="album-tpne.html" class="nav-next">Successivo Album →</a>
+        </div>
+    </div>
+
+    <footer class="footer-margin">
         <p>&copy; 2026 Juice WRLD Tribute. Fighting Demons - 2021</p>
         <p>"Legends Never Die"</p>
     </footer>
