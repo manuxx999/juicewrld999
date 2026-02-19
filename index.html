@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juice WRLD - La Vita e l'Eredità di un Artista</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f8f9fa;
+        }
+
+        header {
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
+
+        header h1 {
+            font-size: 3.5em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        header .subtitle {
+            font-size: 1.3em;
+            opacity: 0.9;
+            font-style: italic;
+        }
+
+        nav {
+            background-color: #0f3460;
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 8px 16px;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+
+        nav a:hover {
+            background-color: #e94560;
+            transform: translateY(-2px);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        section {
+            background: white;
+            margin: 40px 0;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        section h2 {
+            font-size: 2.5em;
+            color: #1a1a2e;
+            margin-bottom: 25px;
+            border-bottom: 3px solid #e94560;
+            padding-bottom: 15px;
+            display: inline-block;
+        }
+
+        .bio-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            align-items: center;
+        }
+
+        .bio-image {
+            width: 100%;
+            height: 400px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 4em;
+            color: white;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .bio-text h3 {
+            font-size: 1.8em;
+            color: #e94560;
+            margin-bottom: 15px;
+        }
+
+        .bio-text p {
+            margin-bottom: 15px;
+            font-size: 1.05em;
+            line-height: 1.8;
+            color: #555;
+        }
+
+        .timeline {
+            margin-top: 30px;
+        }
+
+        .timeline-item {
+            display: flex;
+            margin-bottom: 25px;
+            position: relative;
+            padding-left: 40px;
+        }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: 8px;
+            top: 5px;
+            width: 12px;
+            height: 12px;
+            background-color: #e94560;
+            border-radius: 50%;
+            border: 3px solid #1a1a2e;
+        }
+
+        .timeline-item::after {
+            content: '';
+            position: absolute;
+            left: 14px;
+            top: 17px;
+            width: 2px;
+            height: 40px;
+            background-color: #ddd;
+        }
+
+        .timeline-item:last-child::after {
+            display: none;
+        }
+
+        .timeline-content {
+            flex: 1;
+        }
+
+        .timeline-year {
+            font-weight: bold;
+            color: #e94560;
+            font-size: 1.2em;
+        }
+
+        .timeline-content p {
+            margin-top: 5px;
+            color: #666;
+        }
+
+        .albums-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+            margin-top: 30px;
+        }
+
+        .album-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 12px;
+            padding: 20px;
+            text-align: center;
+            color: white;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            transition: all 0.3s ease;
+        }
+
+        .album-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .album-cover {
+            width: 100%;
+            height: 200px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3em;
+            margin-bottom: 15px;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+        }
+
+        .album-card h3 {
+            font-size: 1.4em;
+            margin-bottom: 8px;
+        }
+
+        .album-card p {
+            font-size: 0.95em;
+            opacity: 0.95;
+        }
+
+        .achievements {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .achievement-box {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            padding: 25px;
+            border-radius: 8px;
+            color: white;
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .achievement-box .number {
+            font-size: 2.5em;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .achievement-box p {
+            font-size: 0.95em;
+        }
+
+        .impact-content {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+        }
+
+        .impact-item {
+            padding: 20px;
+            background: linear-gradient(135deg, #e94560 0%, #d63447 100%);
+            color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .impact-item h3 {
+            font-size: 1.3em;
+            margin-bottom: 10px;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .gallery-item {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 12px;
+            height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3em;
+            color: white;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .gallery-item:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        footer {
+            background: #1a1a2e;
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+            margin-top: 40px;
+        }
+
+        footer p {
+            margin-bottom: 10px;
+        }
+
+        footer .social-links {
+            margin-top: 15px;
+        }
+
+        footer a {
+            color: #e94560;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 0 10px;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2em;
+            }
+
+            .bio-container {
+                grid-template-columns: 1fr;
+            }
+
+            nav ul {
+                gap: 15px;
+            }
+
+            section {
+                padding: 25px;
+            }
+
+            section h2 {
+                font-size: 1.8em;
+            }
+
+            .albums-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header id="home">
+        <h1>🎵 JUICE WRLD 🎵</h1>
+        <p class="subtitle">La Vita e l'Eredità di Jarad Anthony Higgins</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#biography">Biografia</a></li>
+            <li><a href="#career">Carriera</a></li>
+            <li><a href="#albums">Album</a></li>
+            <li><a href="#achievements">Successi</a></li>
+            <li><a href="#impact">Eredità</a></li>
+            <li><a href="#gallery">Galleria</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <!-- SEZIONE BIOGRAFIA -->
+        <section id="biography">
+            <h2>Chi Era Juice WRLD</h2>
+            <div class="bio-container">
+                <div class="bio-image">🎤</div>
+                <div class="bio-text">
+                    <h3>Jarad Anthony Higgins</h3>
+                    <p>Juice WRLD, pseudonimo di Jarad Anthony Higgins, è nato il 2 dicembre 1998 a Chicago, Illinois. Fin da giovane ha mostrato una straordinaria passione per la musica, iniziando a produrre beat e a fare rap durante gli anni del liceo.</p>
+                    
+                    <p>Ha cambiato il suo stadio d'arte adottando il nome "Juice WRLD" nel 2015, ispirandosi al romanzo "Brave New World" di Aldous Huxley. Questo nome rappresentava la sua visione artistica di uno spazio dove poteva esplorare emozioni profonde e diverse.</p>
+
+                    <p>La sua musica combina elementi di hip-hop, trap, rock e pop, con testi che affrontano tematiche come ansia, depressione, amore e crescita personale. La sua unicità risiedeva nella capacità di unire melodie accattivanti con testi introspettivi.</p>
+
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-content">
+                                <span class="timeline-year">1998</span>
+                                <p>Nascita di Jarad Anthony Higgins a Chicago</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-content">
+                                <span class="timeline-year">2013</span>
+                                <p>Inizia a produrre musica e a fare rap online</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-content">
+                                <span class="timeline-year">2015</span>
+                                <p>Adotta il nome "Juice WRLD"</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-content">
+                                <span class="timeline-year">2017</span>
+                                <p>Firma con Interscope Records e Lil Bibby</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEZIONE CARRIERA -->
+        <section id="career">
+            <h2>La Sua Carriera</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <span class="timeline-year">Giugno 2018</span>
+                        <p><strong>Debut Album "Goodbye & Good Riddance"</strong> - Debutto ufficiale con successo immediato, raggiungendo la Top 10 della Billboard 200. Ha consolidato il suo stile unico nel panorama musicale.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <span class="timeline-year">Maggio 2019</span>
+                        <p><strong>"Lucid Dreams" Milestone</strong> - Il singolo emerge come uno dei suoi brani più importanti, accumulando miliardi di visualizzazioni su piattaforme streaming.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <span class="timeline-year">Marzo 2019</span>
+                        <p><strong>Album "Astroworld Tour"</strong> - Tour mondiale con sold-out in numerose città, consolidando la sua base di fan globale.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <span class="timeline-year">Marzo 2020</span>
+                        <p><strong>"The Goat" - Album Posthumo</strong> - Lancio di progetti compilatori che celebrano il suo catalogo e lavori inediti.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <span class="timeline-year">Successivo</span>
+                        <p><strong>Eredità Duratura</strong> - La sua musica continua a influenzare generazioni di artisti emergenti nel genere.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEZIONE ALBUM -->
+        <section id="albums">
+            <h2>Discografia Principale</h2>
+            <div class="albums-grid">
+                <div class="album-card">
+                    <div class="album-cover">💿</div>
+                    <h3>Goodbye & Good Riddance</h3>
+                    <p>2018</p>
+                    <p>Album di debutto che ha lanciato la sua carriera verso il successo internazionale</p>
+                </div>
+                <div class="album-card">
+                    <div class="album-cover">💿</div>
+                    <h3>Astroworld</h3>
+                    <p>2019</p>
+                    <p>Secondo album con collaborazioni illuminate e sperimentazione sonora</p>
+                </div>
+                <div class="album-card">
+                    <div class="album-cover">💿</div>
+                    <h3>Legends Never Die</h3>
+                    <p>2020</p>
+                    <p>Album posthumo compilato da lavori inediti e demo rare</p>
+                </div>
+                <div class="album-card">
+                    <div class="album-cover">💿</div>
+                    <h3>Fighting Demons</h3>
+                    <p>2021</p>
+                    <p>Continuazione della sua eredità musicale con tracce inedite</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEZIONE SUCCESSI -->
+        <section id="achievements">
+            <h2>Riconoscimenti e Successi</h2>
+            <div class="achievements">
+                <div class="achievement-box">
+                    <div class="number">2B+</div>
+                    <p>Visualizzazioni Streaming</p>
+                </div>
+                <div class="achievement-box">
+                    <div class="number">10</div>
+                    <p>Volte Top 10 Billboard Hot 100</p>
+                </div>
+                <div class="achievement-box">
+                    <div class="number">4</div>
+                    <p>Album in Top 10 Billboard 200</p>
+                </div>
+                <div class="achievement-box">
+                    <div class="number">Platino</div>
+                    <p>Certificazioni RIAA e Internazionali</p>
+                </div>
+                <div class="achievement-box">
+                    <div class="number">Milioni</div>
+                    <p>Fan Globali Dedicati</p>
+                </div>
+                <div class="achievement-box">
+                    <div class="number">Leggenda</div>
+                    <p>Influenza Culturale Duratura</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEZIONE IMPATTO E EREDITÀ -->
+        <section id="impact">
+            <h2>La Sua Eredità</h2>
+            <div class="impact-content">
+                <div class="impact-item">
+                    <h3>🎵 Innovazione Musicale</h3>
+                    <p>Ha rivoluzionato il panorama hip-hop contemporaneo fondendo generi diversi e creando un suono unico riconoscibile al primo ascolto. La sua influenza è visibile nei lavori di artisti emergenti.</p>
+                </div>
+                <div class="impact-item">
+                    <h3>💬 Vulnerabilità agli Artisti</h3>
+                    <p>Ha aperto le porte per una discussione aperta sulla salute mentale, ansia e depressione nel settore musicale, dando voce rotta a una generazione di ascoltatori che si sentivano marginalizzati.</p>
+                </div>
+                <div class="impact-item">
+                    <h3>👥 Comunità Globale</h3>
+                    <p>Ha creato una comunità mondiale di fan dedicati che celebrano la sua musica, messaggi e lo spirito della sua arte. La sua influenza trascende le barriere geografiche e linguistiche.</p>
+                </div>
+                <div class="impact-item">
+                    <h3>🌟 Ispirazione Artistica</h3>
+                    <p>La sua morte prematura ha spinto il dibattito pubblico sulla consapevolezza del benessere degli artisti. La sua memoria vive attraverso le generazioni che continuano a scoprire e apprezzare la sua musica.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEZIONE GALLERIA -->
+        <section id="gallery">
+            <h2>Galleria di Momenti Memorabili</h2>
+            <div class="gallery">
+                <div class="gallery-item">🎤 Performance Live</div>
+                <div class="gallery-item">🎬 Icon Culturale</div>
+                <div class="gallery-item">🏆 Award Show</div>
+                <div class="gallery-item">🎸 Studio Sessions</div>
+                <div class="gallery-item">🌍 Tour Mondiale</div>
+                <div class="gallery-item">💫 Moments Con Fan</div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Juice WRLD Tribute. Celebrando la Vita e la Musica di un Artista Straordinario.</p>
+        <p>Juice WRLD: 2 Dicembre 1998 - 8 Dicembre 2019</p>
+        <p>"Legends Never Die"</p>
+        <div class="social-links">
+            <a href="#">Official Website</a>
+            <a href="#">Music Streaming</a>
+            <a href="#">Social Media</a>
+        </div>
+    </footer>
+</body>
+</html>
