@@ -230,6 +230,31 @@
             opacity: 0.95;
         }
 
+        .album-placeholder {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 10px;
+            font-weight: bold;
+            font-size: 0.95em;
+            border-radius: 6px;
+            color: white;
+        }
+
+        .drfl-cover {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            position: relative;
+        }
+
+        .tpne-cover {
+            background: linear-gradient(135deg, #30cfd0 0%, #330867 100%);
+            position: relative;
+        }
+
         .achievements {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -573,8 +598,8 @@
                     <p>Collaborazione speciale con Future che ha mostrato la versatilità di Juice WRLD nel trap</p>
                 </div>
                 <div class="album-card">
-                    <div class="album-cover">
-                        <img src="DRFL.jfif" alt="Death Race for Love">
+                    <div class="album-cover drfl-cover">
+                        <img src="DRFL.jfif" alt="Death Race for Love" onerror="this.style.display='none'">
                     </div>
                     <h3>Death Race for Love</h3>
                     <p>2019</p>
@@ -582,7 +607,7 @@
                 </div>
                 <div class="album-card">
                     <div class="album-cover">
-                        <img src="Lnd.jfif" alt="Legends Never Die">
+                        <img src="LND.jfif" alt="Legends Never Die">
                     </div>
                     <h3>Legends Never Die</h3>
                     <p>2020</p>
@@ -597,8 +622,8 @@
                     <p>Continuazione della sua eredità musicale con tracce inedite che affrontano tematiche profonde</p>
                 </div>
                 <div class="album-card">
-                    <div class="album-cover">
-                        <img src="TPNE.jfif" alt="The Party Never Ends">
+                    <div class="album-cover tpne-cover">
+                        <img src="TPNE.jfif" alt="The Party Never Ends" onerror="this.style.display='none'">
                     </div>
                     <h3>The Party Never Ends</h3>
                     <p>2022</p>
